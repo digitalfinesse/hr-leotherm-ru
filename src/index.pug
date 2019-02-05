@@ -1,0 +1,112 @@
+extends pug/base
+
+append vars
+	-
+		var title = "Leo Group Rus - Главная страница"
+
+block content
+
+	section
+		.section__direction
+			.header Управление климатом в помещении:
+
+			.products_list
+				.product
+					img(src="images/products/worm-floor.jpg" alt="Теплый пол")
+					p Теплый пол
+				.product
+					img(src="images/products/thermostat.jpg" alt="Термостаты")
+					p Термостаты
+				.product
+					img(src="images/products/thermohead.jpg" alt="Термоголовки")
+					p Термоголовки
+				.product
+					img(src="images/products/knot.jpg" alt="Узлы подключения")
+					p Узлы подключения
+
+	.section_pdf
+		.half
+			img(src="images/pdf_catalog/tech-catalog.jpg" alt="Технические каталоги")
+			.half_text
+				h2 Технические каталоги
+				p Полная техническая информация по каждой модели Purmo:
+				br
+				|- монтажные размеры;
+				br
+				|- теплоотдачи;
+				br
+				|- рекомендации по счету;
+				a(href="#") Скачать каталоги в PDF
+
+		.half
+			img(src="images/pdf_catalog/price-list.jpg" alt="Прайс-листы Purmo 2017")
+			.half_text
+				h2 Прайс-листы Purmo 2017
+				p Представленные в файлах цены являются базовыми без учета персональных скидок и сезонных предложений
+				br
+				br
+				| Персональную скидку узнавайте у менеджера
+				a(href="#") Скачать прайс-листы в PDF
+
+
+
+	section
+		.section_detail
+			h2 Выбрали модель? Давайте определяться с деталями!
+			h3 1-  Выберите тип подключения:
+			.connections_list
+				.connection
+					img(src="images/connections/01.jpg" alt="Боковое подключение")
+					p Боковое
+				.connection
+					img(src="images/connections/02.jpg" alt="Диагональное подключение")
+					p Диагональное
+				.connection
+					img(src="images/connections/03.jpg" alt="Нижнее смещенное подключение")
+					p Нижнее смещенное
+				.connection
+					img(src="images/connections/04.jpg" alt="Нижнее центральное подключение")
+					p Нижнее центральное
+				.connection
+					img(src="images/connections/05.jpg" alt="Нижнее подключение по краям прибора")
+					p Нижнее по краям прибора
+			h3 2-  Выберите подводку труб:
+			.delivery_list
+				.arrow
+					img(src="images/delivery/left-arrow.jpg" alt="Стрелка влево")
+				.delivery
+					img(src="images/delivery/delivery-01.jpg")
+					p Открытая подводка труб из пола
+				.delivery
+					img(src="images/delivery/delivery-02.jpg")
+					p Скрытая подводка труб из стены
+				.arrow
+					img(src="images/delivery/right-arrow.jpg" alt="Стрелка вправо")
+			h3 3-  Выберите тип креплений:
+			.mount_list
+				.mount
+					img(src="images/mount/mount-01.jpg" alt="Напольные крепления")
+					p Напольные крепления
+				.mount
+					img(src="images/mount/mount-02.jpg" alt="Настенные крепления")
+					p Настенные крепления
+			h3 4-  Выберите комплекты подключения:
+				.complect_connections_list
+					.complect_connection
+						img(src="images/complect_connection/complect_connection-01.jpg" alt="Комплект бокового подключения")
+						p Комплект бокового подключения (термостатический, запорный вентили и термостатическая головка)
+					.complect_connection
+						img(src="images/complect_connection/complect_connection-02.jpg" alt="Комплект нижнего подключения для радиаторов с термоклапаном")
+						p Комплект нижнего подключения для радиаторов с термоклапаном (узел подключения, декоративная накладка и термостатическая головка)
+					.complect_connection
+						img(src="images/complect_connection/complect_connection-03.jpg" alt="Комплект нижнего подключения для радиаторов без термоклапана")
+						p Комплект нижнего подключения для радиаторов без термоклапана (узел подключения со встроенным термоклапаном, декоративной накладкой и термоголовкой)
+
+			.form-block
+				.header
+					h3 Рассчитаем стоимость и сроки прямо сейчас!
+					h3 8 (800) 350-04-29
+				form
+					input(type="text" placeholder="Ваше имя" name="client_name")
+					input(type="text" placeholder="Ваш телефон*" name="client_phone")
+					button(type="submit" value="Получить расчет" name="submit") Получить расчет
